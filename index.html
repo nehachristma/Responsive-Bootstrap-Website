@@ -24,6 +24,9 @@ box-shadow: (0, 86, 210) 0px 0px 0px 1px inset;
 padding: 5px 20px 5px 20px;
         }
 
+        .card{
+            height: 500px;
+        }
 
 .part2{
     background-color: #f5f5f5;
@@ -37,12 +40,20 @@ font-size: 12px;
 
 }
 
+@media screen and (min-width: 767px) {
+ body{
+    font-size:25px;
+ } 
 
-.part3content{
-    gap:20px;
 }
-
+body{
+    font-size: 17px;
+}
     </style>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -80,6 +91,7 @@ font-size: 12px;
         </div>
     </div>
 </nav>
+
   <!-- part1 -->
     <div class="container-fluid part1 mt-5 pt-5">
 <div class="row">
@@ -100,10 +112,10 @@ font-size: 12px;
 
 </div>
 <!-- part2 -->
-<div class="container-fluid part2 mt-5 p-5">
+<div class="container-fluid part2 mt-5 p-5 ">
     <div class="row p-0">
         <h3 class="text-center w-100"> We collaborate with <a href="#" style="text-decoration: none;">300+ leading universities and companies</a></h3> 
-          <div class="col-9 d-flex flex-wrap d-block justify-content-between col-lg-12 w-lg-100 py-4">
+          <div class="col-12 d-flex flex-wrap d-block justify-content-center col-lg-12 w-lg-100 py-4 d-grid gap-5 ">
               <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/77hmeEJo3ZPlURCU02fD52/aa37b7f7b52285ba350acac62d8af5c1/illinois-3.png?auto=format%2Ccompress&dpr=1&w=&h=32" alt="">
               <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XkOucZz6pMLV5DPvXCgCL/1777129a58b0a62b237bd28e9956afe8/duke-3.png?auto=format%2Ccompress&dpr=1&w=&h=32" alt="">
               <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1c6RjBHi3Lqb9QpWxje7iA/b529f909c5230af3210ba2d47d149620/google.png?auto=format%2Ccompress&dpr=1&w=&h=37" alt="">
@@ -122,18 +134,18 @@ font-size: 12px;
 <h6>Explore our newest programs, focused on delivering in-demand skills.</h6>
     <div class="row">
 
-        <div class="card col-12 col-lg-4 m-5 m-lg-0 pb-0 " style="width: 18rem; " class="d-flex flex-1">
-            <img class="card-img-top" src="https://plus.unsplash.com/premium_photo-1681713196957-436df1e76ade?q=80&w=1514&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0" alt="Card image cap" height="60%" width="100%">
-            <div class="card-body mb-0">
+        <div class="card col-12 col-lg-4 m-5 m-lg-0 pb-0 d-flex flex-1" >
+            <img class="card-img-top" src="https://plus.unsplash.com/premium_photo-1681713196957-436df1e76ade?q=80&w=1514&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0" alt="Card image cap" height="300px" width="100%">
+            <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                Some example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-primary ">Go somewhere</a>
             </div>
           </div>
 
-          <div class="card col-12 col-lg-4  m-5 m-lg-0 p-0" style="width: 18rem;" class=" d-flex flex-1">
-            <img class="card-img-top" src="https://images.unsplash.com/photo-1684493735679-359868df0e18?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card image cap" height="60%" width="100%">
+          <div class="card col-12 col-lg-4  m-5 m-lg-0 p-0 d-flex flex-1"  >
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1684493735679-359868df0e18?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card image cap" height="300px" width="100%">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
@@ -142,8 +154,8 @@ font-size: 12px;
             </div>
           </div>
 
-          <div class="card col-12 col-lg-4  m-5 m-lg-0 p-0" style="width: 18rem;" class=" d-flex flex-1">
-            <img class="card-img-top" src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card image cap" height="60%" width="100%">
+          <div class="card col-12 col-lg-4  m-5 m-lg-0 p-0 d-flex flex-1" >
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card image cap" height="300px" width="100%">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
