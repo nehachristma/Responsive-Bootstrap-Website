@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- icons -->
+<script src="https://kit.fontawesome.com/8829348913.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="bindex.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex d-grid gap-3">
+  
+    <a class="navbar-brand mx-0 mx-5 " href="#">
+        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjIuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZpZXdCb3g9IjAgMCAxMTU1IDE2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiPjxwYXRoIGQ9Ik0xNTkuNzUgODEuNTRjMC00NC40OSAzNi42My04MC40NyA4Mi40My04MC40NyA0Ni4xMiAwIDgyLjc2IDM2IDgyLjc2IDgwLjQ3IDAgNDQuMTYtMzYuNjQgODAuOC04Mi43NiA4MC44LTQ1LjggMC04Mi40My0zNi42OC04Mi40My04MC44em0xMjUuNjEgMGMwLTIyLjI0LTE5LjMtNDEuODctNDMuMTgtNDEuODctMjMuNTUgMC00Mi44NSAxOS42My00Mi44NSA0MS44NyAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yIDIzLjkyIDAgNDMuMTgtMTkuNjMgNDMuMTgtNDIuMnptNzA1LjYzIDEuMzFjMC00OC43NCAzOS41OC04MS43OCA3NS41Ny04MS43OCAyNC41MyAwIDM4LjYgNy41MiA0OC4wOCAyMS45MmwzLjc3LTE5aDM2Ljc5djE1NS40aC0zNi43OWwtNC43NS0xNmMtMTAuNzkgMTEuNzgtMjQuMjEgMTktNDcuMSAxOS0zNS4zMy0uMDUtNzUuNTctMzEuMTMtNzUuNTctNzkuNTR6bTEyNS42MS0uMzNjLS4wOS0yMy41MjctMTkuNDctNDIuODM1LTQzLTQyLjgzNS0yMy41OSAwLTQzIDE5LjQxMS00MyA0M3YuMTY1YzAgMjEuNTkgMTkuMyA0MC44OSA0Mi44NiA0MC44OSAyMy44NSAwIDQzLjE0LTE5LjMgNDMuMTQtNDEuMjJ6TTk0NS43OCAyMlY0aC00MC4yM3YxNTUuMzloNDAuMjNWNzUuNjZjMC0yNS4xOSAxMi40NC0zOC4yNyAzNC0zOC4yNyAxLjQzIDAgMi43OS4xIDQuMTIuMjNMOTkxLjM2LjExYy0yMC45Ny4xMS0zNi4xNyA3LjMtNDUuNTggMjEuODl6bS00MDQuMjcuMDF2LTE4bC00MC4yMy4wOS4zNCAxNTUuMzcgNDAuMjMtLjA5LS4yMi04My43MmMtLjA2LTI1LjE4IDEyLjM1LTM4LjI5IDMzLjkzLTM4LjM0IDEuMzc2LjAwNCAyLjc1Mi4wODEgNC4xMi4yM0w1ODcuMSAwYy0yMSAuMTctMzYuMjIgNy4zOS00NS41OSAyMi4wMXpNMzM4Ljg4IDk5LjJWNC4wMWg0MC4yMlY5NC4zYzAgMTkuOTUgMTEuMTIgMzEuNzMgMzAuNDIgMzEuNzMgMjEuNTkgMCAzNC0xMy4wOSAzNC0zOC4yOFY0LjAxaDQwLjI0djE1NS4zOGgtNDAuMjF2LTE4Yy05LjQ4IDE0LjcyLTI0Ljg2IDIxLjkyLTQ2LjEyIDIxLjkyLTM1Ljk4LjAxLTU4LjU1LTI2LjE2LTU4LjU1LTY0LjExem0zOTEuNzQtMTcuNDhjLjA5LTQzLjUxIDMxLjIzLTgwLjc0IDgwLjYyLTgwLjY1IDQ1LjguMDkgNzguMTEgMzYuNzggNzggODAgLjAxIDQuMjczLS4zMyA4LjU0LTEgMTIuNzZsLTExOC40MS0uMjJjNC41NCAxOC42NSAxOS44OSAzMi4wOSA0My4xMiAzMi4xNCAxNC4wNiAwIDI5LjEyLTUuMTggMzguMy0xNi45NGwyNy40NCAyMmMtMTQuMTEgMTkuOTMtMzkgMzEuNjYtNjUuNDggMzEuNjEtNDYuNzUtLjE2LTgyLjY3LTM1LjIzLTgyLjU5LTgwLjd6bTExOC4xMi0xNi4xNGMtMi4yNi0xNS43LTE4LjU5LTI3Ljg0LTM3Ljg5LTI3Ljg3LTE4LjY1IDAtMzMuNzEgMTEuMDYtMzkuNjMgMjcuNzNsNzcuNTIuMTR6bS0yNjEuNCA1OS45NGwzNS43Ni0xOC43MmM1LjkxIDEyLjgxIDE3LjczIDIwLjM2IDM0LjQ4IDIwLjM2IDE1LjQzIDAgMjEuMzQtNC45MiAyMS4zNC0xMS44MiAwLTI1LTg0LjcxLTkuODUtODQuNzEtNjcgMC0zMS41MiAyNy41OC00OC4yNiA2MS43Mi00OC4yNiAyNS45NCAwIDQ4LjkyIDExLjQ5IDYxLjQgMzIuODNsLTM1LjQ0IDE4Ljc1Yy01LjI1LTEwLjUxLTE1LjEtMTYuNDItMjcuNTgtMTYuNDItMTIuMTQgMC0xOC4wNiA0LjI3LTE4LjA2IDExLjQ5IDAgMjQuMyA4NC43MSA4Ljg3IDg0LjcxIDY3IDAgMzAuMjEtMjQuNjIgNDguNTktNjQuMzUgNDguNTktMzMuODItLjAzLTU3LjQ2LTExLjE5LTY5LjI3LTM2Ljh6TTAgODEuNTRDMCAzNi43MyAzNi42My43NCA4Mi40My43NGMyNy45NDctLjE5NiA1NC4xODIgMTMuNzM3IDY5LjY3IDM3bC0zNC4zNCAxOS45MmE0Mi45NzIgNDIuOTcyIDAgMDAtMzUuMzMtMTguMzJjLTIzLjU1IDAtNDIuODUgMTkuNjMtNDIuODUgNDIuMiAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yYTQyLjUwMiA0Mi41MDIgMCAwMDM2LjMxLTIwbDM0IDIwLjI4Yy0xNS4zMDcgMjMuOTU1LTQxLjkwMiAzOC40MzEtNzAuMzMgMzguMjhDMzYuNjMgMTYyLjM0IDAgMTI1LjY2IDAgODEuNTR6IiBmaWxsPSIjMDA1NkQyIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4=" width="100%" height="100%" class="custom-input">
+    </a>
+
+    <button class="navbar-toggler mt-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="col-12 col-lg-6 d-flex">
+            <button class="btn btn-outline-success" id="btn-nav1" type="button">Explore</button>
+            <input class="form-control mr-lg-0" type="search" placeholder="what do you want to learn?" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="btn-nav2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+
+
+        <div class="col-12 col-lg-6 mt-2 mt-lg-0 d-flex justify-content-end ">
+            <a class="nav-link" href="#">Online Degrees</a>
+            <a class="nav-link mx-5" href="#">Find Your Career</a>
+            <button class="btn btn-outline-success mx-5 " id="btn-nav3" type="button">Join for free</button>
+        </div>
+    </div>
+</nav>
+
+  <!-- part1 -->
+    <div class="container-fluid part1 mt-5 pt-5 p-5 ">
+<div class="row">
+    <div class="col-12  m-0  col-lg-6 p-5">
+        <h1> Earn credit toward a degree</h1> 
+        <p class="pl-5 pl-lg-0 pr-5 pr-lg-0 text-left">
+            Discover degree programs where you can earn credit for eligible Professional Certificates and Specializations you complete on Coursera.
+        </p>
+           
+
+    <div class="buttonspartone mt-5">
+        <button class="btn btn-outline-success" type="button" id="btn-part1one">Explore Degrees</button>
+        <button class="btn btn-outline-success mt-5 mt-lg-0 " type="button" id="btn-part1one" style="background-color: white;color: black; border: 2px solid grey;">Try courses for Business</button>
+    </div>
+</div>
+    <div class="col-12 py-5 text-center col-lg-6 py-0 pt-0">
+        <img src="b.png" alt="" width="90%">
+    </div>
+
+</div>
+<!-- part2 -->
+<div class="container-fluid part2 mt-5 p-5 w-sm-100">
+    <div class="row p-0">
+        <h3 class="text-center w-100"> We collaborate with <a href="#" style="text-decoration: none;">300+ leading universities and companies</a></h3> 
+          <div class="col-12 d-flex flex-wrap d-block justify-content-center col-lg-12 w-lg-100 py-4 d-grid gap-5 ">
+              <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/77hmeEJo3ZPlURCU02fD52/aa37b7f7b52285ba350acac62d8af5c1/illinois-3.png?auto=format%2Ccompress&dpr=1&w=&h=32" alt="">
+              <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XkOucZz6pMLV5DPvXCgCL/1777129a58b0a62b237bd28e9956afe8/duke-3.png?auto=format%2Ccompress&dpr=1&w=&h=32" alt="">
+              <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1c6RjBHi3Lqb9QpWxje7iA/b529f909c5230af3210ba2d47d149620/google.png?auto=format%2Ccompress&dpr=1&w=&h=37" alt="">
+              <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/60SA8pGxPXMmJf4n7umK1H/ccec31bbe2358210bf8391dcba6cd2f1/umich.png?auto=format%2Ccompress&dpr=1&w=&h=55" alt="">
+              <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3toC4I7jbWxiedfxiyNjtT/735faeaf976a9692f425f8c3a7d125dc/1000px-IBM_logo.svg.png?auto=format%2Ccompress&dpr=1&w=&h=37" alt="">
+              <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/FHOd44z40jTFsSSao84AM/d1e357f5650a23bf2936114112d44445/imperial.png?auto=format%2Ccompress&dpr=1&w=&h=35" alt="">
+              <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4FSFmNXuDIzTvFb7n0v4mK/704ae9e0a7981fb6415f4cb4609bbbb3/stanford.svg?auto=format%2Ccompress&dpr=1&w=&h=27" alt="">
+              <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1ZeiauXe5bPProvfuIo7o2/55d005d42979ab585cdfa01f825b7d4f/penn.svg?auto=format%2Ccompress&dpr=1&w=&h=37" alt="">
+          </div>
+      </div>
+</div>
+
+<!-- part3 -->
+<div class="part3 m-4  p-0 p-lg-5 ">
+   <h2>New AI courses on Coursera</h2> 
+<h6>Explore our newest programs, focused on delivering in-demand skills.</h6>
+    <div class="row d-flex gap-4 gap-lg-0">
+
+        <div class="card col-12 col-lg-3 m-0  m-lg-0 pb-0 d-flex flex-1" >
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1573165407933-1f603352b998?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card image cap" height="300px" width="70%">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some example text to build on the card title and make up the bulk of the card's content.</p>
+              <!-- <a href="#" class="btn btn-primary ">Go somewhere</a> -->
+            </div>
+          </div>
+
+          <div class="card col-12 col-lg-3 m-0   m-lg-0 p-0 d-flex flex-1"  >
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1573496267765-9254e55d9384?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card image cap" height="300px" width="70%">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+             
+            </div>
+          </div>
+
+          <div class="card col-12 col-lg-3 m-0  m-lg-0 p-0 d-flex flex-1" >
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card image cap" height="300px" width="70%">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 </div>
+          </div>
+
+          <div class="card col-12 col-lg-3  m-0  m-lg-0 p-0 d-flex flex-1" >
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card image cap" height="300px" width="70%">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+             
+            </div>
+          </div>
+          <div class="buttons-courses d-flex mt-3 gap-3">
+            <button class="btn-courses1">Show 8 More</button>
+            <button class="btn-courses2">View All <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+</div>
+</div>
+
+<!-- part4 -->
+<div class="part4 mt-5 ml-0 mr-0 p-0">
+   <h1 class="text-center"> From the Coursera community</h1>
+<h4 class="mb-5 text-center">124+ million people have already joined Coursera</h4>
+
+<div class="row d-flex justify-content-between">
+    <div class="part4one text-center col-12 col-lg-3 mb-5 mb-lg-0 mt-5 mt-lg-0 d-flex flex-column align-items-center">
+<img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/Gh5Aatztz6SkN2vkE20DI/2191419b488dad4378150ad38d6dd73c/Amani_Mansur.png?auto=format%2Ccompress&dpr=1&w=202&h=202&q=40"  class="pb-5 w-50 w-lg-100">
+<span id="sp1">Amani M.</span>
+<span id="sp2">United States</span>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus consequuntur fuga, eveniet officiis eos tenetur soluta saepe debitis labore natus!
+</p>
+    </div>
+  
+        <div class="part4two text-center col-12 col-lg-3 mb-5 mb-lg-0 mt-5 mt-lg-0 d-flex flex-column align-items-center">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/66DwUMt1tQTmR4q1JaHPdV/cfa9230aefe73399b5e29af63dc38057/SeungGeon_Kim.png?auto=format%2Ccompress&dpr=1&w=202&h=202&q=40"  class="pb-5 w-50 w-lg-100">
+            <span id="sp1">SeungGeon K.</span>
+            <span id="sp2" class="w-5vw w-lg-7vw">South Korea</span>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus consequuntur fuga, eveniet officiis eos tenetur soluta saepe debitis labore natus!
+            </p>
+    </div>
+    
+        <div class="part4three text-center col-12 col-lg-3 mb-5 mb-lg-0 mt-5 mt-lg-0 d-flex flex-column align-items-center">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/28Nv1NZrGQsLf4kt8CXMdd/66d2002ee1d804a0a1a9729376648060/Vishal_Verma.png?auto=format%2Ccompress&dpr=1&w=202&h=202&q=40"  class="pb-5 w-50 w-lg-100">
+            <span id="sp1">Vishal V.</span>
+            <span id="sp2">India</span>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus consequuntur fuga, eveniet officiis eos tenetur soluta saepe debitis labore natus!
+            </p>
+        </div>
+    
+</div>
+
+
+
+</div>
+
+<div class="part6 m-5">
+    
+    <div class="row ">
+       <h1 class="mb-5"> Explore Coursera</h1>
+            <div class="col-12 col-lg-3 text-center mb-4 ">
+                <div class="book book1 d-flex gap-2">
+                    <img src="https://plus.unsplash.com/premium_photo-1673688152102-b24caa6e8725?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100px" height="80px" alt="">
+                    <div class="content pt-4">
+                        <h6>Data Science</h6>  
+                        <span>425 courses</span>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center mb-4">
+                <div class="book book2 d-flex gap-2">
+                    <img src="https://images.unsplash.com/photo-1687463221023-02f259da7d77?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100px" height="80px" alt="">
+                    <div class="content pt-4">
+                        <h6>Data Science</h6>  
+                        <span>425 courses</span>  
+                    </div> 
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center mb-4 ">
+                <div class="book book3 d-flex gap-2">
+                    <img src="https://images.unsplash.com/photo-1651840198758-af6168d79111?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100px" height="80px" alt="">
+                    <div class="content pt-4">
+                        <h6>Data Science</h6>  
+                        <span>425 courses</span>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center mb-4 ">
+                <div class="book book4 d-flex gap-2">
+                    <img src="https://images.unsplash.com/photo-1651488829517-95af02975dd5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100px" height="80px" alt="">
+                    <div class="content pt-4">
+                        <h6>Data Science</h6>  
+                        <span>425 courses</span>  
+                    </div>  
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center mb-4">
+                <div class="book book5 d-flex gap-2">
+                    <img src="https://images.unsplash.com/photo-1671129731764-139220e6a5da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100px" height="80px" alt="">
+                    <div class="content pt-4">
+                        <h6>Data Science</h6>  
+                        <span>425 courses</span>  
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center mb-4 ">
+                <div class="book book6 d-flex gap-2">
+                    <img src="https://images.unsplash.com/photo-1676825446819-284aad06dfdd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100px" height="80px" alt="">
+                    <div class="content pt-4">
+                        <h6>Data Science</h6>  
+                        <span>425 courses</span>  
+                    </div>  
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center mb-4">
+                <div class="book book7 d-flex gap-2">
+                    <img src="https://plus.unsplash.com/premium_photo-1679082305620-fa44b9a3b6ad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100px" height="80px" alt="">
+                    <div class="content pt-4">
+                        <h6>Data Science</h6>  
+                        <span>425 courses</span>  
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 text-center mb-4">
+                <div class="book book8 d-flex gap-2">
+                    <img src="https://images.unsplash.com/photo-1707248985080-954ad8466006?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100px" height="80px" alt="">
+                    <div class="content pt-4">
+                        <h6>Data Science</h6>  
+                        <span>425 courses</span>  
+                    </div>  
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center mb-4">
+                <div class="book book9 d-flex gap-2">
+                    <img src="https://plus.unsplash.com/premium_photo-1672582775393-ecadc9da3fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100px" height="80px" alt="">
+                    <div class="content pt-4">
+                        <h6>Data Science</h6>  
+                        <span>425 courses</span>  
+                    </div>  
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center  mb-4">
+                <div class="book book10 d-flex gap-2">
+                    <img src="https://images.unsplash.com/photo-1657192809008-729aa92d1228?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100px" height="80px" alt="">
+                    <div class="content pt-4">
+                        <h6>Data Science</h6>  
+                        <span>425 courses</span>  
+                    </div>  
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 text-center mb-4">
+                <div class="book book11 d-flex gap-2">
+                    <img src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100px" height="80px" alt="">
+                    <div class="content pt-4">
+                        <h6>Data Science</h6>  
+                        <span>425 courses</span>  
+                    </div> 
+                </div>
+            </div>
+
+
+
+
+    </div>
+</div>
+
+    <div class="part7 d-flex justify-content-center align-items-center mb-0 pb-0" style="color:#8c8c95;">
+        <div class="row">
+            <div class="col-12 mb-0 pb-0">
+                © Copyright - Coursera | Powered by
+                <a href="#" style="color: #14142b;font-size: 18px;font-weight: bold;padding-left: 5px;"> EduIn</a>
+             </div>
+            </div>
+        </div>
+       
+
+
+</body>
+</html>
